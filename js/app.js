@@ -14,25 +14,24 @@
   ).matches
   const alertMsg = 'Please write your message'
   const initialMsg = 'A message you would like to save'
+  const defaultMsg = "I hope you like it! 😉"
 
   /*** FUNCTIONS ***/
   const setTheme = () => {
     if (isPreferDarkMode) {
-      /* Add is-dark class to body element */
       bodyEl.classList.add('is-dark')
     }
   }
   const changeTheme = () => {
-    /* Toggle is-dark class on body element */
     bodyEl.classList.toggle('is-dark')
   }
   const validateMessage = message => {
     const regex = /\S/g
     return regex.test(message)
   }
-  const setToInitialState = str => {
+  const setToInitialState = defaultStr => {
     alertEl.removeAttribute('aria-live')
-    alertEl.textContent = str
+    alertEl.textContent = defaultStr
     inputEl.classList.remove('app__input--invalid')
   }
   const alertUser = (alertStr, initialStr) => {
@@ -43,29 +42,28 @@
       setToInitialState(initialStr)
     }, 2500)
   }
-  const renderMessage = e => {
-    /**
-     * 1. Prevent the default form submit behavior
-     * 2. Get the value from the input element
-     */
-    e.preventDefault() /* 1 */
-    const messageText = inputEl.value /* 2 */
+  const renderMessage = message => {
+    messageEl.textContent = message
+  }
+  const showMessage = e => {
+    e.preventDefault()
+    const messageText = inputEl.value
     if (validateMessage(messageText)) {
-      messageEl.textContent = messageText
-      inputEl.value = ''
+      renderMessage(messageText)
       localStorage.setItem("savedMessage", messageText)
     } else {
       alertUser(alertMsg, initialMsg)
     }
+    inputEl.value = ""
   }
   const setApp = () => {
     setTheme()
-    const lastMessage = localStorage.getItem("savedMessage") ? localStorage.getItem("savedMessage") : "I hope you like it! 😉"
-    messageEl.textContent = lastMessage
+    const lastMessage = localStorage.getItem("savedMessage") ? localStorage.getItem("savedMessage") : defaultMsg
+    renderMessage(lastMessage)
   }
 
   /*** ADDEVENTLISTNERS ***/
   document.addEventListener('DOMContentLoaded', setApp)
   themeBtn.addEventListener('click', changeTheme)
-  formEl.addEventListener('submit', renderMessage)
+  formEl.addEventListener('submit', showMessage)
 })()
