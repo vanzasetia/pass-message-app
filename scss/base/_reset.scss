@@ -43,16 +43,16 @@ html {
  * For more information: https://gist.github.com/ffoodd/000b59f431e3e64e4ce1a24d5bb36034
  */
 .sr-only {
-  border: 0 !important;
+  position: absolute !important;
+  margin: -1px !important;
   clip: rect(1px, 1px, 1px, 1px) !important;
   -webkit-clip-path: inset(50%) !important;
-         clip-path: inset(50%) !important;
-  height: 1px !important;
-  margin: -1px !important;
-  overflow: hidden !important;
+          clip-path: inset(50%) !important;
+  border: 0 !important;
   padding: 0 !important;
-  position: absolute !important;
   width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
   white-space: nowrap !important;
 }
 
@@ -61,19 +61,18 @@ body {
   align-items: center;
   justify-content: center;
   background-color: $light-blue;
+  padding: rem(20);
   min-height: 100vh;
-  padding: 1.25rem;
   color: $darker-dark-gray;
-  font-size: 1rem;
   font-family: "Poppins", sans-serif;
+  font-size: rem(16);
 }
 
 noscript {
   display: block;
 }
 
-p,
-blockquote {
+p, blockquote {
   line-height: 1.4;
 }
 

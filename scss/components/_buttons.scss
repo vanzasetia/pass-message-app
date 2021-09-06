@@ -1,0 +1,42 @@
+@use "../abstracts" as *;
+
+/*------------------------------------*\
+  #BUTTONS
+\*------------------------------------*/
+
+.btn {
+  display: inline-block;
+  margin: rem(10) 0;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  padding: rem(10);
+  
+  @include focus-visible;
+}
+
+.btn--icon {
+  margin: 0;
+  background-color: transparent;
+  color: $darker-dark-gray;
+  transition: color 150ms ease-in-out;
+
+  @include on-event {
+    background-color: $light-gray;
+    color: $light-blue;
+  }
+}
+
+.btn--submit {
+  background-color: $blue;
+  padding: 0.625rem 2rem;
+  text-transform: uppercase;
+  color: $white;
+  font-size: rem(16);
+  font-weight: 700;
+  transition: background-color 150ms ease-in-out;
+  
+  @include on-event {
+    background-color: $light-blue;
+  }
+}

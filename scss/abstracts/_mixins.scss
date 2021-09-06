@@ -1,5 +1,5 @@
-@use 'variables' as *;
-@use 'functions' as *;
+@use "variables" as *;
+@use "functions" as *;
 
 // Focus Visible
 @mixin focus-visible() {
@@ -21,14 +21,11 @@
 
 @mixin on-event($focus: false) {
   @if $focus {
-    &:hover,
-    &:active,
-    &:focus {
+    &:hover, &:active, &:focus {
       @content;
     }
   } @else {
-    &:hover,
-    &:active {
+    &:hover, &:active {
       @content;
     }
   }
@@ -46,7 +43,7 @@
   }
 }
 
-@mixin color-scheme($value: 'light') {
+@mixin color-scheme($value: "light") {
   @media screen and (prefers-color-scheme:#{$value}) {
     @content;
   }

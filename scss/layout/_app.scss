@@ -1,0 +1,42 @@
+@use "../abstracts" as *;
+
+/*------------------------------------*\
+  #APP
+\*------------------------------------*/
+.app {
+  border-radius: 0.5em;
+  background-color: $white;
+  padding: rem(16);
+  flex-basis: 100%;
+  max-width: rem(450);
+  text-align: center;
+}
+
+.app__form {
+  margin-top: rem(32);
+  margin-bottom: rem(20);
+}
+
+.app__label {
+  text-transform: capitalize;
+  line-height: 1.4;
+  font-size: rem(20);
+  font-weight: 700;
+}
+
+.app__input {
+  display: block;
+  margin: rem(10) auto;
+  border: rem(2) solid $blue;
+  border-radius: 0.5em;
+  padding: rem(8);
+  width: 100%;
+  height: rem(44);
+  font-size: rem(16);
+  
+  @include focus-visible;
+}
+
+.app__title {
+  font-size: rem(20);
+}

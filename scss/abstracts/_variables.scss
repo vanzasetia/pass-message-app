@@ -4,7 +4,7 @@ $black: rgb(17, 17, 17) !default;
 $white: rgb(242, 242, 242) !default;
 $selection-bg: rgb(0, 201, 250) !default;
 $selection-color: $white !default;
-$focus-visible-color: rgb(255, 14, 166) !default;
+$focus-visible-color: rgb(17, 163, 255) !default;
 
 // Colors
 $blue: rgb(0, 156, 255);
@@ -21,7 +21,6 @@ $breakpoints-up: (
   "very-small": 64em, // => 1024px
   "small": 80em // => 1280px
 );
-
 $breakpoints-down: (
   "tiny": 46.8125em, // => 749px
   "very-small": 63.9375em, // => 1023px

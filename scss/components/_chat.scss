@@ -1,0 +1,32 @@
+@use "../abstracts" as *;
+
+/*------------------------------------*\
+  #CHAT
+\*------------------------------------*/
+
+.chat {
+  padding-bottom: rem(20);
+}
+
+.chat__bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -#{rem(25)};
+  left: rem(24);
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+  background-color: $blue;
+  width: rem(40);
+  height: rem(40);
+}
+
+.chat__bubble {
+  position: relative;
+  z-index: 2;
+  margin: rem(10) auto;
+  border-radius: 0.5em;
+  background-color: $blue;
+  padding: rem(16);
+  max-width: rem(200);
+  text-align: left;
+  color: $white;
+}
