@@ -1,0 +1,15 @@
+#### CUSTOM VERSION ####
+# Ignore this annoying file
+.DS_Store
+
+# Ignore node_modules folder
+node_modules/
+
+# Ignore all cache files
+.cache
+
+# Ignore these files
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map

@@ -1,0 +1,86 @@
+/*------------------------------------*\
+  #BASE
+\*------------------------------------*/
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Making sure it inherits 100% of the user font size settings */
+html {
+  font-size: 100%;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: ;
+  color: ;
+}
+
+::-moz-selection {
+  background-color: ;
+  color: ;
+}
+
+/*
+ * Screen Reader Class
+ * 
+ * To hide content visually.
+ *
+ * For more information: https://gist.github.com/ffoodd/000b59f431e3e64e4ce1a24d5bb36034
+ */
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+         clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+body {
+  background-color: ;
+  color: ;
+  font-size: ;
+  font-family: ;
+}
+
+noscript {
+  display: block;
+}
+
+p,
+blockquote {
+  line-height: 1.4;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Using currentColor to inherit the color value */
+svg path {
+  fill: currentColor;
+}

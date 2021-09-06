@@ -1,0 +1,4 @@
+Documentation Folder.
+
+To learn more:
+https://github.com/h5bp/html5-boilerplate/blob/main/dist/doc/usage.md
