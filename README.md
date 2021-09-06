@@ -4,12 +4,11 @@
 
 <!-- Badges -->
 <p align="left">
-  <img src="https://img.shields.io/badge/Difficulty-Newbie-14C2C8?style=for-the-badge&logo=frontendmentor" alt="Difficulty">
-  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/vanzasetia/reponame?style=for-the-badge&logo=github">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/vanzasetia/pass-message-app?style=for-the-badge&logo=github">
   <a href="https://twitter.com/vanzasetia" target="_blank"><img src="https://img.shields.io/twitter/follow/vanzasetia?logo=twitter&style=for-the-badge" alt="Twitter followers." /></a>
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/vanzasetia/reponame?style=for-the-badge&logo=git">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/vanzasetia/pass-message-app?style=for-the-badge&logo=git">
   <img alt="Netlify" src="https://img.shields.io/netlify/?style=for-the-badge&logo=netlify">
-  <img alt="GitHub" src="https://img.shields.io/github/license/vanzasetia/reponame?color=green&style=for-the-badge&logo=github">
+  <img alt="GitHub" src="https://img.shields.io/github/license/vanzasetia/pass-message-app?color=green&style=for-the-badge&logo=github">
 </p>
 <!-- ENDOF Badges -->
 
@@ -24,7 +23,7 @@
 <!-- ENDOF CSS Validation Status -->
 
 <!-- Title -->
-# 
+# Pass Message App
 <!-- Title -->
 
 <!-- Table Of Contents -->
@@ -67,7 +66,6 @@ The user can't pass an empty message.
 
 ### Links
 - [🌐 Live Review](https://urlname.netlify.app/)
-- [👨‍🏫 Frontend Mentor Solution]()
 
 ### Screenshots
 
