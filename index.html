@@ -45,7 +45,7 @@
   <meta name="msapplication-config" content="./favicons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
   <!-- CSS -->
-  <!--<link rel="stylesheet" href="./css/style.css">-->
+  <link rel="stylesheet" href="./css/style.css">
   <!-- Minified JavaScript -->
   <!--<script defer src="./js/app.js"></script>-->
   <!-- Android Dev Tools -->
@@ -56,6 +56,34 @@
   <title>Pass Message App by Vanza Setia</title>
 </head>
 <body dir="ltr" class="js-bodyEl">
-  <h1>Hello World</h1>
+  <main class="app">
+    <h1 class="sr-only">Pass Message App</h1>
+    <div class="flex flex--jc-sb">
+    <a href="" class="btn btn--icon" rel="noopener noreferrer" target="_blank">
+      <span class="sr-only">GitHub repository.</span>
+      <!-- prettier-ignore -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path d="M16 .395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182.8.148 1.094-.347 1.094-.77 0-.381-.015-1.642-.022-2.979-4.452.968-5.391-1.888-5.391-1.888-.728-1.849-1.776-2.341-1.776-2.341-1.452-.993.11-.973.11-.973 1.606.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33.143-1.034.558-1.74 1.016-2.14-3.554-.404-7.29-1.777-7.29-7.907 0-1.747.625-3.174 1.649-4.295-.166-.403-.714-2.03.155-4.234 0 0 1.344-.43 4.401 1.64a15.353 15.353 0 014.005-.539c1.359.006 2.729.184 4.008.539 3.054-2.07 4.395-1.64 4.395-1.64.871 2.204.323 3.831.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895.574.497 1.085 1.47 1.085 2.963 0 2.141-.019 3.864-.019 4.391 0 .426.288.925 1.099.768C27.421 29.457 32 23.462 32 16.395c0-8.837-7.164-16-16-16z"/></svg>
+    </a>
+    <button type="button" class="btn btn--icon js-themeBtn">
+      <span class="sr-only">change theme.</span>
+      <!-- prettier-ignore -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path d="M16 8a8 8 0 100 16 8 8 0 000-16zm0 13V11c2.757 0 5 2.243 5 5s-2.243 5-5 5zm0 5a2 2 0 012 2v2a2 2 0 11-4 0v-2a2 2 0 012-2zm0-20a2 2 0 01-2-2V2a2 2 0 114 0v2a2 2 0 01-2 2zm14 8a2 2 0 110 4h-2a2 2 0 110-4h2zM6 16a2 2 0 01-2 2H2a2 2 0 110-4h2a2 2 0 012 2zm19.899 7.071l1.414 1.414a2 2 0 11-2.828 2.828l-1.414-1.414a2 2 0 112.828-2.828zM6.101 8.929L4.687 7.515a2 2 0 112.828-2.828l1.414 1.414a2 2 0 11-2.828 2.828zm19.798 0a2 2 0 11-2.828-2.828l1.414-1.414a2 2 0 112.828 2.828l-1.414 1.414zM6.101 23.071a2 2 0 112.828 2.828l-1.414 1.414a2 2 0 11-2.828-2.828l1.414-1.414z"/></svg>
+    </button>
+  </div>
+    <form class="app__form js-formEl">
+      <label for="inputMessage" class="app__label js-alertEl">A message you would like to pass</label>
+      <input type="text" name="inputMessage" id="inputMessage" class="app__input js-inputEl">
+      <button type="submit" class="btn btn--submit">send</button>
+    </form>
+    <div class="app__last-message">
+      <p class="app__title">Last delivered message</p>
+      <div class="chat">
+        <div class="chat__bubble">
+          <p class="chat__message js-messageEl">I hope you like it!😉</p>
+        </div>
+        <div class="chat__triangle"></div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
