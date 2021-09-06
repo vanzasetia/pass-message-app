@@ -1,0 +1,26 @@
+@use "../abstracts" as *;
+
+/*------------------------------------*\
+  #DARK-THEME
+\*------------------------------------*/
+.is-dark {
+  background-color: $dark-gray;
+  color: $white;
+}
+
+.is-dark .app {
+  background-color: $darker-dark-gray;
+}
+
+.is-dark .btn--icon {
+  color: $white;
+
+  @include on-event {
+    background-color: $dark-gray;
+    color: $light-blue;
+  }
+}
+
+.is-dark .btn--submit {
+  color: $white;
+}

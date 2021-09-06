@@ -66,6 +66,7 @@ body {
   color: $darker-dark-gray;
   font-family: "Poppins", sans-serif;
   font-size: rem(16);
+  transition: background-color 200ms ease-in-out;
 }
 
 noscript {

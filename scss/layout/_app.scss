@@ -4,12 +4,13 @@
   #APP
 \*------------------------------------*/
 .app {
+  flex-basis: 100%;
   border-radius: 0.5em;
   background-color: $white;
   padding: rem(16);
-  flex-basis: 100%;
   max-width: rem(450);
   text-align: center;
+  transition: background-color 200ms ease-in-out;
 }
 
 .app__form {
@@ -33,8 +34,12 @@
   width: 100%;
   height: rem(44);
   font-size: rem(16);
-  
+
   @include focus-visible;
+}
+
+.app__input--invalid {
+  border-color: $red;
 }
 
 .app__title {
