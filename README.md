@@ -41,6 +41,7 @@
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+    - [JavaScript Regular Expression](#javascript-regular-expression)
   - [Useful resources](#useful-resources)
   - [Continued development](#continued-development)
 - [How to contribute](#how-to-contribute)
@@ -50,7 +51,6 @@
 - [Author](#author)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
-- [References](#references)
 <!-- ENDOF Table Of Contents -->
 
 <!-- Overview -->
@@ -58,13 +58,20 @@
 [(Back to top)](#table-of-contents)
 
 ### Introduction
-
+This a simple JavaScript app that I created to sharpen my JavaScript skill. Feel free to give me any feedback by <a href="mailto: venusbumi2@gmail.com">email</a> or DM me on Twitter 😉.
 
 ### The Challenge
 The user should be able to:
+* Pass the message
+* See the message that has been passed
+* See their last massage across closing browser and refresh
+* See the theme based on their preference
+* Change the theme
+* Not passing an empty message
+* Use this app using assistive technology (keyboard, screen reader)
 
 ### Links
-- [🌐 Live Review](https://urlname.netlify.app/)
+- [🌐 Live Review](https://vanzapassmessage.netlify.app/)
 
 ### Screenshots
 
@@ -89,11 +96,21 @@ Mobile
 - [Eruda - mobile console browser](https://github.com/liriliri/eruda)
 - And many [NPM packages](#prerequisite) 😂
 
-### General Structure
-
 ### What I Learned
 
+### JavaScript Regular Expression
+This is an unexpected thing, where I will learn Regexp (Regular Expression) when working on this app. I need to use regular expression to prevent the user pass any white space characters (space, tab) only.
+
+The regex code that I used was:
+```javascript
+const regex = /\S/g;
+```
+
+That code will check any non-whitespace characters. If there's any non-whitespace characters, the user will be allowed to pass the message, regardless how many characters that the user passing in.
+
 ### Useful Resources
+- [JavaScript Best Practices](https://www.w3.org/wiki/JavaScript_best_practices) - This is a good article that will tell you how to write a strong JavaScript code.
+- [Regex Tester](https://regex101.com) - This tool allow me to test my regular expression before I used it in my production code.
 
 ### Continued Development
 Maybe after some time, I will refactor this code or I'm just gonna improve this solution.
@@ -120,7 +137,8 @@ node --version
   - [Autoprefixer](https://www.npmjs.com/package/autoprefixer) to add vendor prefixes if needed.
   - [Prettier](https://www.npmjs.com/package/prettier) to format the HTML code.
   - [csscomb](https://www.npmjs.com/package/csscomb) to format and sort the properties order the Sass and CSS files.
-  - [markserv](https://www.npmjs.com/package/markserv) live server for the markdown file. (Optional).
+  - [semistandard](https://github.com/standard/semistandard) to format JavaScript code
+  - [markserv](https://www.npmjs.com/package/markserv) live server for the markdown file.
 
 ### Setup
 - First, fork this repo.
@@ -163,22 +181,27 @@ git push -u origin fixingbugs
 ## Author
 [(Back to top)](#table-of-contents)
 
+I upload about coding on this platform.
 - Frontend Mentor - [@vanzasetia](https://www.frontendmentor.io/profile/vanzasetia)
 - Twitter - [@vanzasetia](https://www.twitter.com/vanzasetia)
 - Code Newbie - [@vanzasetia](https://community.codenewbie.org/vanzasetia)
 - Facebook - [Vanza Setia](https://www.facebook.com/profile.php?id=100071874075732)
+- Instagram - [@vanzapsetia](https://www.instagram.com/vanzapsetia/)
 <!-- ENDOF Author -->
 
 <!-- Acknowledgements -->
 ## Acknowledgements
 [(Back to top)](#table-of-contents)
+
+Thank you for everyone who has read till this point. You are amazing 👍.
 <!-- END OF Acknowledgements -->
 
 <!-- LICENSE -->
 ## License
 [(Back to top)](#table-of-contents)
 
->You can check out [the full license](https://github.com/vanzasetia/reponame/blob/master/LICENSE)
+>You can check out [the full license](https://github.com/vanzasetia/
+pass-message-app/blob/master/LICENSE)
 
 This project is licensed under the terms of the MIT license.
 
@@ -187,8 +210,3 @@ For those of you who are wondering, why do I need to license this?
 - Second I checked this [Choose license website](https://choosealicense.com/) to help me chose a license.
 - The last reason, if I don't want to choose a license, then [here's what gonna happen](https://choosealicense.com/no-permission/).
 <!-- ENDOF LICENSE -->
-
-<!-- References -->
-## References
-[(Back to top)](#table-of-contents)
-<!-- ENDOF References -->
