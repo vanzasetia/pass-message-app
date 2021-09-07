@@ -201,7 +201,7 @@ Thank you for everyone who has read till this point. You are amazing 👍.
 ## License
 [(Back to top)](#table-of-contents)
 
->You can check out [the full license](https://github.com/vanzasetia/
+> You can check out [the full license](https://github.com/vanzasetia/
 pass-message-app/blob/master/LICENSE)
 
 This project is licensed under the terms of the MIT license.
