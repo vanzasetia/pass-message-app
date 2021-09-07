@@ -1,5 +1,5 @@
 <!-- Banner -->
-![Banner]()
+![Banner](./images/banner.jpg)
 <!-- ENDOF Banner-->
 
 <!-- Badges -->
@@ -51,6 +51,7 @@
 - [Author](#author)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
+- [References](#references)
 <!-- ENDOF Table Of Contents -->
 
 <!-- Overview -->
@@ -210,3 +211,7 @@ For those of you who are wondering, why do I need to license this?
 - Second I checked this [Choose license website](https://choosealicense.com/) to help me chose a license.
 - The last reason, if I don't want to choose a license, then [here's what gonna happen](https://choosealicense.com/no-permission/).
 <!-- ENDOF LICENSE -->
+
+## References
+
+> See the [documentation](https://github.com/vanzasetia/pass-message-app/tree/master/doc)
