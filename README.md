@@ -19,6 +19,11 @@
         src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
         alt="Valid CSS!" />
     </a>
+  <a href="https://github.com/standard/semistandard">
+    <img style="border:0;width:88px;height:31px"
+        src="https://raw.githubusercontent.com/standard/semistandard/master/badge.svg"
+        alt="JavaScript Style Guide" />
+    </a>
 </p>
 <!-- ENDOF CSS Validation Status -->
 
@@ -53,16 +58,10 @@
 [(Back to top)](#table-of-contents)
 
 ### Introduction
-The only problem with this app is that, the user can pass an empty message with `space` or tab.
+
 
 ### The Challenge
 The user should be able to:
-* Pass any message
-* See the message that has been passed
-* See the app theme based on their preference  **(Bonus feature)**
-* Change the color theme **(Bonus feature)**
-
-The user can't pass an empty message.
 
 ### Links
 - [🌐 Live Review](https://urlname.netlify.app/)
