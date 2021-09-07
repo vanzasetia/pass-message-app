@@ -20,7 +20,7 @@
         alt="Valid CSS!" />
     </a>
   <a href="https://github.com/standard/semistandard">
-    <img style="border:0;width:88px;height:31px"
+    <img style="border:0;height:31px"
         src="https://raw.githubusercontent.com/standard/semistandard/master/badge.svg"
         alt="JavaScript Style Guide" />
     </a>
