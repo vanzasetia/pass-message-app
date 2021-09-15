@@ -43,7 +43,6 @@
   - [What I learned](#what-i-learned)
     - [JavaScript Regular Expression](#javascript-regular-expression)
   - [Useful resources](#useful-resources)
-  - [Continued development](#continued-development)
 - [How to contribute](#how-to-contribute)
   - [Practice](#practice)
   - [Prerequisite](#prerequisite)
