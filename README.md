@@ -76,11 +76,7 @@ The user should be able to:
 
 ### Screenshots
 
-Desktop
 ![Desktop](./screenshots/desktop.jpg)
-
-Mobile
-![Mobile](./screenshots/mobile.jpg)
 
 <!-- ENDOF Overview -->
 
@@ -112,9 +108,6 @@ That code will check any non-whitespace characters. If there's any non-whitespac
 ### Useful Resources
 - [JavaScript Best Practices](https://www.w3.org/wiki/JavaScript_best_practices) - This is a good article that will tell you how to write a strong JavaScript code.
 - [Regex Tester](https://regex101.com) - This tool allow me to test my regular expression before I used it in my production code.
-
-### Continued Development
-Maybe after some time, I will refactor this code or I'm just gonna improve this solution.
 <!-- ENDOF My Process -->
 
 <!-- How To Contribute -->
